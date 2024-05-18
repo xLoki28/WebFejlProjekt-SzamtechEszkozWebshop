@@ -1,0 +1,14 @@
+<span class="loading-indicator" *ngIf="loading">
+    <mat-spinner>
+    </mat-spinner>
+</span>
+
+<div class="page_title main_component">
+    <h1 [ngStyle]="title ? {'margin-top': '40%'}: {}">Jelentkezzen be!</h1>
+    <mat-form-field><mat-label for="email">Email: </mat-label><input matInput type="email" [formControl]="email"/></mat-form-field>
+    <mat-form-field><mat-label for="password">Jelszó: </mat-label><input matInput type="password" [formControl]="password"/></mat-form-field>
+    <span>
+        <span [ngStyle]="look ? {'display': 'block', 'padding-bottom': '10px'}: {}"><button mat-raised-button color="accent" (click)="login()">Bejelentkezés</button></span>
+        <span><button mat-raised-button color="accent" [routerLink]="'/registration'">Regisztráció</button></span>
+    </span>
+</div>

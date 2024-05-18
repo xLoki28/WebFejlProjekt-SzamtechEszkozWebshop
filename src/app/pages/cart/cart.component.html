@@ -1,0 +1,33 @@
+<div class="page_title main_component" [ngStyle]="title ? {'margin-top': '15%'}: {}">
+    <h1>Íme az eddig kosárba helyezett termékek!</h1>
+</div>
+<div>
+    <div id="grid-div" [ngClass]="look ? 'grid-one': 'grid-two'">
+        <mat-card *ngFor="let obj of items">
+            <mat-card-header style="margin-left: auto; margin-right: auto;">
+                <mat-card-title>
+                    <h3 style="font-weight: bold; font-size: 18px;">{{ obj.name }}</h3>
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="container">
+                    <img class="itemImage" [src]="imageUrlsMap[obj.id]"/>
+                    <div class="break"></div>
+                    <div style="font-size: large; margin: 20px;">
+                        {{ obj.description }}
+                    </div>
+                    <div class="break"></div>
+                    <div style="font-size: large; margin: 20px;">
+                        {{ getTotalPrice(obj) }} Ft
+                    </div>
+                </div>
+            </mat-card-content>
+            <mat-card-actions style="justify-content: center;">
+                <span style="margin-bottom: 10px;"><button mat-raised-button color="accent" (click)="onDelete(obj)">Törlés</button></span>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
+<div class="buyButton">
+    <button style="align-self: center;" mat-raised-button color="accent" (click)="deleteAll()">Fizetés</button>
+</div>

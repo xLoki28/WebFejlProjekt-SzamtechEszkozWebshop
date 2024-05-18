@@ -1,0 +1,34 @@
+.page_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 270%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+}
+
+.main_component {
+    height: 40vh;
+}
+
+span {
+    font-size: x-large;
+}
+
+mat-divider {
+    width: 50%;
+    align-self: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

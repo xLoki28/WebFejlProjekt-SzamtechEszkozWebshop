@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "webfejlprojekt": {
+      "hosting": {
+        "szamtech-eszkoz-webshop-projekt": [
+          "webfejlprojekt"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "webfejlprojekt"
+  }
+}

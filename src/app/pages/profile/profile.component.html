@@ -1,0 +1,8 @@
+<div class="page_title main_component">
+    <h1 [ngStyle]="{'margin-bottom': '40px'}" [ngStyle]="title ? {'margin-top': '20%'}: {}">Saját adatok</h1>
+    <span>Név: {{ currentUser?.name }}</span>
+    <mat-divider></mat-divider>
+    <span>Felhasználónév: {{ currentUser?.username }}</span>
+    <mat-divider></mat-divider>
+    <span>Email: {{ currentUser?.email }}</span>
+</div>

@@ -1,0 +1,27 @@
+.page_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.main_component {
+    height: 40vh;
+    align-items: center;
+    margin: 10vh;
+}
+
+h1 {
+    font-size: 270%;
+}
+
+span {
+    padding: 5px;
+}
+
+mat-form-field {
+    display: inline-grid;
+    width: 50%;
+    align-self: center;
+}
